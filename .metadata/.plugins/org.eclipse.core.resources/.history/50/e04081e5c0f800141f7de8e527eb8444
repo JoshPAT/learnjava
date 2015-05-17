@@ -1,0 +1,23 @@
+
+public class RaceDemo {
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		RaceDemo I = new RaceDemo();
+		Person p = new Person("Lucy", 10);
+		Dog d = new Dog("Zipper", 12);
+		
+		for (int a = 0; a <3; a++){
+			I.m1(p);
+			I.m1(d);
+		}
+	
+	
+	}
+	
+	void m1(Runnable obj){obj.run("grass");}
+	void m2(Runnable obj){obj.run("swamp");}
+}

@@ -1,0 +1,67 @@
+
+public class Wolf extends Animal implements Runnable, Swimmable, Jumpable {
+	
+	final char gender;
+	private int age;
+	private int health;
+	public int hungry;
+	
+	@Override
+	public void speicalskill(Animal a) {
+		System.out.print(name +" attacks " + a.name);
+		
+	}		
+
+	public void jump() {
+		
+		
+	}
+	
+	public void run(String location) { 
+		this.location = location;
+		System.out.println(name +" is running on the "+ location); }
+	
+	public void swim(String location)  { 
+		this.location = location;
+		System.out.print(name +" is swimming in the "+ location); }
+	
+	public int getSwimspeed(){
+		if (location == "water")
+			return (int) (50-(0.7*super.health)-(0.3*super.age));
+		else if (location == "swamp")
+			return (int) (30-(0.7*super.health)-(0.3*super.age));
+		return (int) 0;
+	}
+		
+	public int getRunspeed(){
+		if (location == "grass")
+			return (int) (90-(0.7*super.health)-(0.3*super.age));
+		else if (location == "sand")
+			return (int) (70-(0.7*super.health)-(0.3*super.age));
+		return (int) 0;};
+		
+	Wolf(String name,char gender,int hungry){
+			super(name,gender);
+			this.gender = gender;
+			this.hungry = hungry;
+	}	
+	
+	
+	public static void main(String[] args) {
+		Wolf d = new Wolf("Zipper", 'f' ,(int) (Math.random()*10+1));
+		d.setHealth(7);
+		d.run("swamp");
+		d. = 9;
+		System.out.println(d.getSwimspeed());
+		System.out.println(d.getHealth());
+		System.out.println(d.gender);
+		
+	}
+
+	@Override
+	public void live(String location) {
+		// TODO Auto-generated method stub
+		
+	}	
+	
+}

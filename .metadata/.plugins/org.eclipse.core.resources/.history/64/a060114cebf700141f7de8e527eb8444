@@ -1,0 +1,13 @@
+
+abstract class Animal {
+	String name;
+	abstract public void eat();
+	abstract public void evole();
+	
+	Animal(String name){
+		this.name = name;
+	}
+	
+	Animal(){}
+	
+}

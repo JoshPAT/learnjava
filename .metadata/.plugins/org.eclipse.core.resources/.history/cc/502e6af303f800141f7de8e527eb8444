@@ -1,0 +1,42 @@
+public class Person extends Animal implements Runnable, Swimmable {
+
+	public int hungry;
+	public void eat(){};
+
+	public void run(String ground) { 
+		this.ground = ground;
+		System.out.println("run "+ ground); }
+	
+	public void swim(String ground)  { 
+		this.ground = ground;
+		System.out.print("swim "+ ground); }
+	
+	public int getSwimspeed(){
+		if (ground == "water")
+			return (int) (50-(0.7*super.weight)-(0.3*super.age));
+		else if (ground == "swamp")
+			return (int) (30-(0.7*super.weight)-(0.3*super.age));
+		return (int) 0;
+	}
+		
+	public int getRunspeed(){
+		return (int) (50-(0.7*super.weight)-(0.3*super.age));};
+	
+	Person(String name,int hungry){
+		super(name);
+		this.hungry = hungry;
+	}
+	
+	public static void main(String[] args) {
+		Person p = new Person("ZHOU", (int) (Math.random()*10+1));
+		
+		p.setWeight(19);
+		p.weight =11;
+		p.run("swamp");
+		System.out.println(p.getSwimspeed());
+		System.out.println(p.getWeight());
+		m1(p);
+	}
+	static void m1(Runnable f){f.run("water"); System.out.println(f.getRunspeed());};
+}
+

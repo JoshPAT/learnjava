@@ -1,0 +1,36 @@
+
+abstract class Animal {
+	
+	String name;
+	String location;
+	
+	char gender;
+	public int age;
+	public int health;
+	
+	abstract public void live(String livelocation);
+	abstract public void speicalskill(Animal a);
+	
+	Animal(String name, char gender){
+		this.name = name;
+		this.gender = gender;
+	}
+	
+	Animal(){}
+	
+	int getAge(){return this.age;};
+	int getHealth(){return this.health;};
+	
+	public void setAge(int age) {
+		if (age >0 && age < 100)
+		this.age = age;
+		else System.out.println("Wrong value");
+	}
+	
+	public void setHealth(int health) {
+		if (health >0 && health < 100)
+		this.health = health;
+		else System.out.println("Wrong value");
+	}
+
+}

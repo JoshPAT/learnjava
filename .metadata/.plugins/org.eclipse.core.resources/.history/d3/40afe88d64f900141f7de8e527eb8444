@@ -1,0 +1,30 @@
+
+public class RaceDemo {
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		RaceDemo I = new RaceDemo();
+		Person p = new Person("Lucy", 10);
+		Dog d = new Dog("Zipper", 12);
+		
+		for (int a = 0; a <10; a++){
+			int index = 1;
+			System.out.print("["+index+"]: ");
+			I.show(p);
+			System.out.print("["+ (int)(index+1) +"]: ");
+			I.show(d);
+			index++;
+		}
+		p.speicalskill(d);
+	
+	}
+	
+	String runrace[] = {"grass","sand"};
+	
+	void show(Runnable obj){obj.run(runrace[(int) (Math.random()*2)]);}
+	void r2(Runnable obj){obj.run("swamp");}
+	
+}

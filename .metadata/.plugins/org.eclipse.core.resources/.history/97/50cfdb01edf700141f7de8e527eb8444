@@ -1,0 +1,23 @@
+
+abstract class Animal {
+	String name;
+	String ground;
+	private int age;
+	private int weight;
+	abstract public void eat();
+	
+	public int getAge() {
+		return this.age;
+	}
+	
+	public int getWeight() {
+		return this.weight;
+	}
+	
+	Animal(String name){
+		this.name = name;
+	}
+	
+	Animal(){}
+	
+}

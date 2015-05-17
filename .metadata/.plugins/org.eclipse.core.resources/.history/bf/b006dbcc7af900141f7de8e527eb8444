@@ -1,0 +1,27 @@
+
+abstract class Animal {
+	
+	String name;
+	String location;
+	
+	static char gender;
+	public int age;
+	public int health;
+	
+	abstract public void live(String livelocation);
+	abstract public void speicalskill(Animal a);
+	
+	abstract public void setAge(int age);
+	abstract public void setHealth(int health);
+	
+	abstract int getAge();
+	abstract int getHealth();
+	
+	
+	Animal(String name, char gender){
+		this.name = name;
+		Animal.gender = gender;
+	}
+	
+	Animal(){}
+}

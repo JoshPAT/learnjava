@@ -1,0 +1,17 @@
+
+public class RaceDemo {
+	public String rand;
+	void m1(Runnable obj){obj.run(rand);}
+	
+	public static void main(String[] args) {
+		RaceDemo I = new RaceDemo();
+		Person p = new Person("Lucy", 10);
+		Dog d = new Dog("Zipper", 12);
+		for (int a = 0; a <3; a++){
+			String rand = "swamp";
+			I.m1(p);
+			I.m1(d);
+		}
+		
+	}
+}

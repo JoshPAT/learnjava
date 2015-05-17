@@ -1,0 +1,36 @@
+
+abstract class Animal {
+	String name;
+	String ground;
+	public int age;
+	public int weight;
+	abstract public void speicalskill();
+	
+
+	Animal(String name){
+		this.name = name;
+	}
+	
+	Animal(){}
+	
+	int getAge(){return this.age;};
+	int getWeight(){return this.weight;};
+	
+	public void setAge(int age) {
+		if (age >0 && age < 100)
+		this.age = age;
+		else System.out.println("Wrong value");
+	}
+	
+	public void setWeight(int weight) {
+		if (weight >0 && weight < 100)
+		this.weight = weight;
+		else System.out.println("Wrong value");
+	}
+
+
+	public void speicalskill(Animal a) {
+		// TODO Auto-generated method stub
+		
+	}
+}

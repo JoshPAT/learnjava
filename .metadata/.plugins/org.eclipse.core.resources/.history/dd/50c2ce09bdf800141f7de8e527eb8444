@@ -1,0 +1,16 @@
+
+public class Dog extends Animal implements Runnable, Swimmable {
+	private int age;
+	private int weight;
+	public int hungry;
+	public void eat(){};
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

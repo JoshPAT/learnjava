@@ -1,0 +1,12 @@
+
+interface Runnable {
+	public void run(String ground);
+	public int getRunspeed();
+	}
+
+interface Swimmable {
+	public void swim(String ground);
+	public int getSwimspeed();
+	}
+
+

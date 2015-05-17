@@ -1,0 +1,59 @@
+
+public class Ostrich extends Animal implements Runnable, Flyable{
+	
+	@Override
+	public void fly() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void run(String ground) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getRunspeed() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void live(String livelocation) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void speicalskill(Animal a) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setAge(int age) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setHealth(int health) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	int getAge() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	int getHealth() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+}

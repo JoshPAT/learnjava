@@ -1,0 +1,61 @@
+public class Person extends Animal implements Runnable, Swimmable {
+	
+	private char gender;
+	private int age;
+	private int health;
+	
+	
+	@Override
+	public void speicalskill(Animal a) {
+		System.out.print(name + " tames " + a.name + ".");
+		System.out.println("Now " + a.name +" is a friend of " + name);
+	}
+	
+	public void run(String ground) { 
+		this.ground = ground;
+		System.out.println(name +" is running on the "+ ground); }
+	
+	public void swim(String ground)  { 
+		this.ground = ground;
+		System.out.print(name +" is swimming in the "+ ground); }
+	
+	public int getSwimspeed(){
+		if (ground == "water")
+			return (int) (50-(0.7*super.health)-(0.3*super.age));
+		else if (ground == "swamp")
+			return (int) (30-(0.7*super.health)-(0.3*super.age));
+		return (int) 0;
+	}
+		
+	public int getRunspeed(){
+		if (ground == "grass")
+			return (int) (100-(0.7*super.health)-(0.3*super.age));
+		else if (ground == "sand")
+			return (int) (80-(0.7*super.health)-(0.3*super.age));
+		return (int) 0;};
+	
+	Person(String name){
+		super(name);
+		
+	}
+	
+	public static void main(String[] args) {
+		Person p = new Person("Lucy", (int) (Math.random()*10+1));
+		p.setHealth(19);
+		p.run("swamp");
+		System.out.println(p.getSwimspeed());
+		System.out.println(p.getWeight());
+		
+	}
+
+	@Override
+	public void live(String location) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+
+}
+ 

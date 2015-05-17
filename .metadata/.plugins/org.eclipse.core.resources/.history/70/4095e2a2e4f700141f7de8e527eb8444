@@ -1,0 +1,16 @@
+
+interface Runnable {
+	public void run(char ground);
+	public int getRunspeed();
+	}
+
+interface Swimmable {
+	public void swim(char ground);
+	public int getSwimspeed();
+	}
+
+interface Tamable {public void tame();}
+
+interface Eatable {public void eat();}
+
+

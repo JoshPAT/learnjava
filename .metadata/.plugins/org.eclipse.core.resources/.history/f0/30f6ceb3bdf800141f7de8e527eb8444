@@ -1,0 +1,63 @@
+
+public class Dog extends Animal implements Runnable, Swimmable, Jumpable {
+	private int age;
+	private int weight;
+	public int hungry;
+	public void skill() {
+		
+		
+	}
+	
+	@Override
+	public void jump() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void run(String ground) { 
+		this.ground = ground;
+		System.out.println("run "+ ground); }
+	
+	public void swim(String ground)  { 
+		this.ground = ground;
+		System.out.print("swim "+ ground); }
+	
+	public int getSwimspeed(){
+		if (ground == "water")
+			return (int) (50-(0.7*super.weight)-(0.3*super.age));
+		else if (ground == "swamp")
+			return (int) (30-(0.7*super.weight)-(0.3*super.age));
+		return (int) 0;
+	}
+		
+	public int getRunspeed(){
+		if (ground == "grass")
+			return (int) (100-(0.7*super.weight)-(0.3*super.age));
+		else if (ground == "rock")
+			return (int) (80-(0.7*super.weight)-(0.3*super.age));
+		return (int) 0;};
+		
+	Dog(String name,int hungry){
+			super(name);
+			this.hungry = hungry;
+	}	
+	
+	
+	public static void main(String[] args) {
+		Dog d = new Dog("Zipper", (int) (Math.random()*10+1));
+		d.setWeight(7);
+		d.run("swamp");
+		System.out.println(d.getSwimspeed());
+		System.out.println(d.getWeight());
+	}
+
+	
+
+	
+
+	
+	
+	
+	
+	
+}

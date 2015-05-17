@@ -1,0 +1,19 @@
+
+public class A {
+	static void hello(){System.out.println("a");};
+
+	{System.out.println("abc");}
+	
+
+
+
+
+	public static void main(String[] args) {
+		
+		A a = new A();
+		
+		a.hello();
+	}
+
+}
+

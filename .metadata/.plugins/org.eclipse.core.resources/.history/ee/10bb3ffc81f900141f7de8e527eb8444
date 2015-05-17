@@ -1,0 +1,17 @@
+
+public class A {
+	static void hello(){System.out.println("a");};
+
+	
+
+
+
+	public static void main(String[] args) {
+		
+		A a = new B();
+		
+		a.hello();
+	}
+
+}
+

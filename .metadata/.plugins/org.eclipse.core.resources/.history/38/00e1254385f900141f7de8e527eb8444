@@ -1,0 +1,4 @@
+
+public class B {
+	static void hello(){System.out.println("b);};
+}
